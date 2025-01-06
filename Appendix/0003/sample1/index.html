@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content= "initial-scale=1">
+		<title>Audioオブジェクト</title>
+	</head>
+	<body>
+		<div id="result"></div>
+		<script>
+			var ele = document.getElementById("result");
+			var myAudio = new Audio();
+			var txt = "";
+			for(var i in myAudio){
+				txt = txt + i + "<br>";
+			}
+			ele.innerHTML = txt;
+		</script>
+	</body>
+</html>

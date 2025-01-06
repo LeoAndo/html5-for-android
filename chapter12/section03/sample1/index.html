@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html manifest="mobile.appcache">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content= "initial-scale=1, user-scalable=no">
+		<title>キャッシュ更新処理</title>
+		<link rel="stylesheet" href="css/jquery.mobile.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/cache.js"></script>
+		<script src="js/jquery.mobile.js"></script>
+	</head>
+	<body>
+		<div data-role="page">
+			<div data-role="header">
+				<h1>キャッシュ更新処理</h1>
+			</div>
+			<div data-role="content">	
+				<img src="images/photo1.jpg">
+				<img src="images/photo2.jpg">
+				<form>
+					<input type="button" id="updateCache" value="キャッシュ更新">
+				</form>
+				<output id="stat"></output>
+			</div>
+		</div>
+	</body>
+</html>

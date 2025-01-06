@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content= "initial-scale=1, user-scalable=no">
+		<title>再生形式をチェック</title>
+		<link rel="stylesheet" href="css/jquery.mobile.css">
+	</head>
+	<body>
+		<div id="result"></div>
+		<script>
+			var ele = document.getElementById("result");
+			var videoEle = document.createElement("video");
+			ele.innerHTML = "video/ogg = " + videoEle.canPlayType("video/ogg");
+			ele.innerHTML += "<br>video/mp4 = " + videoEle.canPlayType("video/mp4");
+			ele.innerHTML += "<br>video/3gpp = " + videoEle.canPlayType("video/3gpp");
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1 @@
+Xperiaでvideo要素にheight="80%"とすると正しい高さにならない

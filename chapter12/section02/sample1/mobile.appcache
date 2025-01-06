@@ -1,0 +1,15 @@
+CACHE MANIFEST
+#version 1.0
+#2012/02/17
+css/jquery.mobile.css
+images/photo1.jpg
+js/jquery.js
+js/jquery.mobile.js
+
+NETWORK:
+index.html
+js/cache.js
+*
+
+FALLBACK:
+index.html offline.html

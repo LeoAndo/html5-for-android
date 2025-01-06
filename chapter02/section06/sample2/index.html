@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content= "initial-scale=1">
+		<title>スマートフォン一覧</title>
+		<link rel="stylesheet" href="css/jquery.mobile.css">
+		<script src="js/jquery.js"></script>
+		<script>
+			$(document).bind("mobileinit", function(){
+				$.extend($.mobile, {
+					defaultPageTransition : "none"
+				});
+			});
+		</script>
+		<script src="js/jquery.mobile.js"></script>
+	</head>
+	<body>
+		<div data-role="page">
+			<div data-role="header">
+				<h1>スマートフォン一覧</h1>
+			</div>
+			<div data-role="content">	
+				<ul data-role="listview">
+					<li>Android
+						<ul>
+							<li>Xperia acro</li>
+							<li>Galaxy SII LTE</li>
+							<li>AQUOS PHONE</li>
+							<li>SONY Tablet</li>
+							<li>REGZA Tablet</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

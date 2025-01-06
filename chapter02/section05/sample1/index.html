@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content= "initial-scale=1">
+		<title>発注システム</title>
+		<script src="js/jquery.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<div data-role="page">
+			<div data-role="header">
+				<h1>メニューリスト</h1>
+			</div>
+			<div data-role="content">
+				<form action="./order.cgi" method="post">
+					<fieldset>
+						<legend>カレー</legend>
+						<input type="radio" name="curry" id="curry1" value="650"><label for="curry1">チキンカレー</label>
+						<input type="radio" name="curry" id="curry2" value="850"><label for="curry2">カツカレー</label>
+						<input type="radio" name="curry" id="curry3" value="780"><label for="curry3">シーフードカレー</label>
+						<input type="radio" name="curry" id="curry4" value="720"><label for="curry4">ポークカレー</label>
+						<input type="radio" name="curry" id="curry5" value="950"><label for="curry5">ハンバーグカレー</label>
+					</fieldset>
+					<fieldset>
+						<legend>サラダ</legend>
+						<input type="checkbox" name="sarad1" id="sarad1" value="150"><label for="sarad1">野菜サラダ</label>
+						<input type="checkbox" name="sarad2" id="sarad2" value="180"><label for="sarad2">卵サラダ</label>
+						<input type="checkbox" name="sarad3" id="sarad3" value="200"><label for="sarad3">シーザーサラダ</label>
+						<input type="checkbox" name="sarad4" id="sarad4" value="230"><label for="sarad4">ベーコンサラダ</label>
+					</fieldset>
+					<fieldset>
+						<label>ドレッシング</label>
+							<select name="dressing">
+							<option value="off">和風</option>
+							<option value="on">ごま</option>
+						</select>	
+					</fieldset>
+					<fieldset>
+						<legend>ドリンク</legend>
+						<input type="checkbox" name="drink1" id="drink1" value="110"><label for="drink1">オレンジ</label>
+						<input type="checkbox" name="drink2" id="drink2" value="100"><label for="drink2">コーラ</label>
+						<input type="checkbox" name="drink3" id="drink3" value="120"><label for="drink3">グレープ</label>
+					</fieldset>
+					<fieldset>
+						<legend>メモ</legend>
+						<input type="text" name="memo" id="memo" placeholder="その他、注記があれば入力">
+					</fieldset>
+					<input type="submit" value="注文する">
+				</form>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div>合計金額：<span id="totalPrice">0</span>円</div>
+			</div>
+		</div>
+	</body>
+</html>

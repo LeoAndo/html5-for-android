@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content= "initial-scale=1, user-scalable=no">
+		<title>マイクロフォトストック - 風景屋 -</title>
+		<link rel="stylesheet" href="css/jquery.mobile.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.js"></script>
+	</head>
+	<body>
+		<!-- トップページ -->
+		<div data-role="page">
+			<div data-role="header">
+				<h1>映像ライブラリ</h1>
+			</div>
+			<div data-role="content">	
+				<ul data-role="listview">
+					<li><a href="#movie">平湯大滝</a></li>
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" data-id="foot">
+				<p>マイクロフォトストック - 風景屋 -</p>
+			</div>
+		</div>
+		<!-- 映像ページ -->
+		<div data-role="page" id="movie" data-add-back-btn="true" data-back-btn-text="戻る">
+			<div data-role="header">
+				<h1>平湯大滝</h1>
+			</div>
+			<div data-role="content">	
+				<video width="100%" height="80%" controls poster="http://www.openspc2.org/title.gif">
+					<source src="movie/hirayu.mp4">
+					<source src="movie/hirayu.3gp">
+					<p>映像の再生に対応していません</p>
+				</video>
+			</div>
+			<div data-role="footer" data-position="fixed" data-id="foot">
+				<p>マイクロフォトストック - 風景屋 -</p>
+			</div>
+		</div>
+	</body>
+</html>

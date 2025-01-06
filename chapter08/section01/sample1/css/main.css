@@ -1,0 +1,8 @@
+canvas {
+	border: 1px solid gray;
+}
+#area {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}

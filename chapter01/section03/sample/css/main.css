@@ -1,0 +1,7 @@
+.rotateImage {
+	-webkit-animation: 'rot3d' 20s linear 0s infinite normal;
+}
+@-webkit-keyframes 'rot3d' {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}

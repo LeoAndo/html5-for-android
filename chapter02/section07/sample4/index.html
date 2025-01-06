@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content= "initial-scale=1">
+		<title>ローディング表示</title>
+		<link rel="stylesheet" href="css/jquery.mobile.css">
+		<script src="js/jquery.js"></script>
+		<script>
+			$(document).bind("mobileinit", function(){
+				$.extend($.mobile, {
+					loadingMessage : "マップデータを読み込んでいます..."
+				});
+			});
+		</script>
+		<script src="js/jquery.mobile.js"></script>
+		<script>
+			$("#load").live("pageshow", function(){
+				$.mobile.showPageLoadingMsg();
+				setTimeout("$.mobile.hidePageLoadingMsg()", 5000);
+			});
+		</script>
+	</head>
+	<body>
+		<div data-role="page">
+			<div data-role="header">
+				<h1>ローディング表示</h1>
+			</div>
+			<div data-role="content">
+				<a href="#load"data-role="button" data-transition="pop">ゲームスタート</a>
+			</div>
+		</div>
+		<div data-role="page" id="load"></div>
+	</body>
+</html>

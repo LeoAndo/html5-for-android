@@ -1,0 +1,2 @@
+-webkit-transform: rotateY(45deg);
+とするとAndroidだけZ軸に回転する・・・

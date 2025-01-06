@@ -1,0 +1,8 @@
+canvas {
+	background-image: url(grid.png);
+}
+#area {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
